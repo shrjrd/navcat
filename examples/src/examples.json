@@ -158,5 +158,10 @@
         "title": "Rasterize Filled Volume",
         "description": "Example of rasterizing filled volumes into a heightfield",
         "tags": ["heightfield", "rasterize", "generation", "shape", "volume"]
+    },
+    "example-jumplinks": {
+        "title": "Jumplinks",
+        "description": "Example of automatically generating off mesh connections based on jump trajectories",
+        "tags": ["jumplinks", "generation", "off-mesh"]
     }
 }

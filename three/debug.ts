@@ -24,7 +24,7 @@ export type DebugObject = {
     dispose: () => void;
 };
 
-const primitiveToThreeJS = (primitive: DebugPrimitive): { object: THREE.Object3D; dispose: () => void } => {
+export const primitiveToThreeJS = (primitive: DebugPrimitive): { object: THREE.Object3D; dispose: () => void } => {
     const disposables: (() => void)[] = [];
 
     switch (primitive.type) {
@@ -233,7 +233,7 @@ const primitiveToThreeJS = (primitive: DebugPrimitive): { object: THREE.Object3D
 /**
  * Converts an array of debug primitives to a Three.js group
  */
-function primitivesToThreeJS(primitives: DebugPrimitive[]): DebugObject {
+export function primitivesToThreeJS(primitives: DebugPrimitive[]): DebugObject {
     const group = new THREE.Group();
     const disposables: (() => void)[] = [];
 
